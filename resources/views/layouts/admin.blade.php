@@ -174,7 +174,7 @@
                             src="assets/img/avatar/ans01.jpg" width="48">
                         <div class="ps-2">
                             <div class="fs-xs lh-1 opacity-60">Hello,</div>
-                            <div class="fs-sm dropdown-toggle">{{ auth()->user()->name ? auth()->user()->name : ''}}</div>
+                            <div class="fs-sm dropdown-toggle">{{ Auth::check() ? auth()->user()->name : ''}}</div>
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end my-1">
@@ -416,8 +416,8 @@
                             <div class="offcanvas-body">
                                 <div class="pb-2 pb-lg-0 mb-4 mb-lg-5"><img class="d-block rounded-circle mb-2"
                                         src="assets/img/avatar/ans01.jpg" width="100">
-                                    <h3 class="h5 mb-1">{{ auth()->user()->name ? auth()->user()->name : ''}}</h3>
-                                    <p class="fs-sm text-muted mb-0">{{ auth()->user()->email ? auth()->user()->email : ''}}</p>
+                                    <h3 class="h5 mb-1">{{ Auth::check() ? auth()->user()->name : ''}}</h3>
+                                    <p class="fs-sm text-muted mb-0">{{ Auth::check() ? auth()->user()->email : ''}}</p>
                                 </div>
                                 <nav class="nav flex-column pb-2 pb-lg-4 mb-3">
                                     <h4 class="fs-xs fw-medium text-muted text-uppercase pb-1 mb-2">Account</h4><a

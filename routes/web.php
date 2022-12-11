@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Error 404
+Route::get('/404', function () {
+    return view('404');
+})->name('error');
 
 //Authentication
 Route::controller(AuthenticationController::class)

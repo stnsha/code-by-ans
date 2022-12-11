@@ -29,7 +29,7 @@ class Handler extends ExceptionHandler
         // You can add your own exception here
         // so redirect to the home route
         if ($e instanceof NotFoundHttpException) {
-            return redirect()->route('auth.login');
+            return redirect()->route('error');
         }
 
         return parent::render($request, $e);
