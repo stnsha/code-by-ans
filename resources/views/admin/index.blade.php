@@ -3,7 +3,7 @@
 @section('title', 'Code by ANS')
 
 @section('content')
-<h1 class="h2 mb-4">Welcome back, {{ $user->name }} <i class="ai-emoji-smile fs-[25px]"></i></h1>
+<h1 class="h2 mb-4">Welcome back, {{ auth()->user()->name }} <i class="ai-emoji-smile fs-[25px]"></i></h1>
 <!-- Basic info-->
 <section class="card border-0 py-1 p-md-2 p-xl-3 p-xxl-4 mb-4">
     <div class="card-body">
@@ -18,11 +18,11 @@
                     style="width: 80px; height: 80px; background-image: url(assets/img/avatar/ans01.jpg);">
                 </div>
                 <div class="pt-3 pt-sm-0 ps-sm-3">
-                    <h3 class="h5 mb-2">{{ $user->name }}<i
+                    <h3 class="h5 mb-2">{{ auth()->user()->name }}<i
                             class="ai-circle-check-filled fs-base text-success ms-2"></i>
                     </h3>
                     <div class="text-muted fw-medium d-flex flex-wrap flex-sm-nowrap align-iteems-center">
-                        <div class="d-flex align-items-center me-3"><i class="ai-mail me-1"></i>{{ $user->email }}</div>
+                        <div class="d-flex align-items-center me-3"><i class="ai-mail me-1"></i>{{ auth()->user()->email }}</div>
                         <div class="d-flex align-items-center text-nowrap"><i class="ai-map-pin me-1"></i>Malaysia</div>
                     </div>
                 </div>

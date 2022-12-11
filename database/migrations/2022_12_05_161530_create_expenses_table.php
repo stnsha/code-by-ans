@@ -19,6 +19,7 @@ return new class extends Migration {
             $table->timestamp('event_date');
             $table->double('total_amount');
             $table->integer('mode_of_payment'); //cash, transfer, cc, dc, etc
+            $table->softDeletes();
             $table->timestamps();
         });
     }

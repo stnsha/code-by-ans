@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\ReminderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Authentication
 Route::controller(AuthenticationController::class)
     ->name('auth.')
     ->group(function () {
@@ -25,6 +27,7 @@ Route::controller(AuthenticationController::class)
             ->middleware(['auth']);
     });
 
+//Admin dashboard
 Route::middleware('auth')->group(function () {
     Route::controller(AdminDashboardController::class)
         ->prefix('admin')
@@ -32,5 +35,15 @@ Route::middleware('auth')->group(function () {
         ->middleware('auth:web')
         ->group(function () {
             Route::get('/', 'index')->name('dashboard');
+        });
+});
+
+//ReminderRoute::middleware('auth')->group(function () {
+    Route::controller(ReminderController::class)
+        ->prefix('reminder')
+        ->name('reminder.')
+        ->middleware('auth:web')
+        ->group(function () {
+            Route::get('/', 'index')->name('reminder');
         });
 });

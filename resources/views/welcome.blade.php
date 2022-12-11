@@ -211,7 +211,7 @@
             </div>
             <!-- Cover image-->
             <div class="w-50 bg-size-cover bg-repeat-0 bg-position-center"
-                style="background-image: url(assets/img/account/cover.jpg);"></div>
+                style="background-image: url(assets/img/logo-ans.png);"></div>
         </div>
     </main>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>

@@ -16,13 +16,15 @@ return new class extends Migration {
             $table->id();
             $table->string('title'); //appointment
             $table->string('description'); //psychiatiarsit
-            $table->string('venue'); //htj
+            $table->string('location'); //htj
             $table->timestamp('date_start'); //1/2 9am
             $table->timestamp('date_end');
+            $table->integer('priority_level');
             $table->integer('type')->default(1); //appointment
             $table->integer('relationship')->default(1); //self
             $table->string('remarks')->default(''); //none
             $table->integer('expenses_id')->nullable(); //none
+            $table->softDeletes();
             $table->timestamps();
         });
     }
