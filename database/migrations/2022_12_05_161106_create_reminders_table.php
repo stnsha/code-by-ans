@@ -18,8 +18,8 @@ return new class extends Migration {
             $table->string('title'); //appointment
             $table->string('description'); //psychiatiarsit
             $table->string('location'); //htj
-            $table->timestamp('date_reminder_start')->default(DB::raw('CURRENT_TIMESTAMP'));; //1/2 9am
-            $table->timestamp('date_reminder_end')->default(DB::raw('CURRENT_TIMESTAMP'));;
+            $table->timestamp('date_reminder_start')->default(DB::raw('CURRENT_TIMESTAMP')); //1/2 9am
+            $table->timestamp('date_reminder_end')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->integer('priority_level');
             $table->integer('type')->default('1'); //appointment
             $table->integer('relationship')->default('1'); //self
