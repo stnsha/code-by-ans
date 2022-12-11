@@ -155,8 +155,8 @@
         <div class="d-lg-flex position-relative h-100">
             <!-- Home button--><a
                 class="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4"
-                href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Back to home"><i
-                    class="ai-home"></i></a>
+                href="{{ route('portfolio.view') }}" data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Back to home"><i class="ai-home"></i></a>
             <!-- Sign in form-->
             <div class="d-flex flex-column align-items-center w-lg-50 h-100 px-3 px-lg-5 pt-5">
                 <div class="w-100 mt-auto" style="max-width: 526px;">
@@ -211,7 +211,7 @@
             </div>
             <!-- Cover image-->
             <div class="w-50 bg-size-cover bg-repeat-0 bg-position-center"
-                style="background-image: url(assets/img/logo-ans.png);"></div>
+                style="background-image: url(assets/img/logo/1bg.png);"></div>
         </div>
     </main>
     <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll>

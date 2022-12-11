@@ -294,7 +294,7 @@
         <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
         <header class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <img src="{{ asset('assets/img/logo/ans-horizontal-logo.png') }}" width="450px" alt="">
+                <img src="{{ asset('assets/img/logo/2.png') }}" width="35%" alt="">
                 {{-- <a class="navbar-brand pe-sm-3" href="{{ route('admin.dashboard') }}"><span
                         class="text-primary flex-shrink-0 me-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 640 512">
