@@ -304,7 +304,7 @@
                 <p class="fs-lg pb-2 pb-md-0 mb-4 mb-md-5">The page you are looking for was moved, removed or might
                     never
                     existed.</p><a class="btn btn-lg btn-primary"
-                    href="{{ Auth::check() ? route('admin.dashboard') : route('auth.login') }}">Go to homepage</a>
+                    href="{{ Auth::check() ? route('admin.dashboard') : route('portfolio.view') }}">Go to homepage</a>
             </div>
         </div>
         <!-- Divider for dark mode only-->
