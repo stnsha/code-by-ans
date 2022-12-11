@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\EmailController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ReminderController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,11 +22,18 @@ use Illuminate\Support\Facades\Route;
 Route::controller(AuthenticationController::class)
     ->name('auth.')
     ->group(function () {
-        Route::get('/', 'sign_in_page')->name('login');
+        Route::get('/login', 'sign_in_page')->name('login');
         Route::post('/validate', 'validate_login')->name('validate');
         Route::get('/logout', 'logout')
             ->name('logout')
             ->middleware(['auth']);
+    });
+
+//Porfolio
+Route::controller(PortfolioController::class)
+    ->name('portfolio.')
+    ->group(function () {
+        Route::get('/', 'index')->name('view');
     });
 
 //Admin dashboard
@@ -39,11 +48,13 @@ Route::middleware('auth')->group(function () {
 });
 
 //ReminderRoute::middleware('auth')->group(function () {
-    Route::controller(ReminderController::class)
-        ->prefix('reminder')
-        ->name('reminder.')
-        ->middleware('auth:web')
-        ->group(function () {
-            Route::get('/', 'index')->name('reminder');
-        });
-});
+Route::controller(ReminderController::class)
+    ->prefix('reminder')
+    ->name('reminder.')
+    ->middleware('auth:web')
+    ->group(function () {
+        Route::get('/', 'index')->name('reminder');
+    });
+
+//Emails
+Route::get('/send-email', [EmailController::class, 'index']);
