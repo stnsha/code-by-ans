@@ -26,12 +26,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     if (modeSwitch === null) return;
     var checkbox = modeSwitch.querySelector('.form-check-input');
 
-    if (mode === 'dark') {
-      root.classList.add('dark-mode');
-      checkbox.checked = true;
-    } else {
+    if (mode === 'light') {
       root.classList.remove('dark-mode');
       checkbox.checked = false;
+    } else {
+      root.classList.add('dark-mode');
+      checkbox.checked = true;
     }
 
     modeSwitch.addEventListener('click', function (e) {

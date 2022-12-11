@@ -29,10 +29,11 @@
             <th colspan="5" class="text-center">Overview</th>
         </tr>
         <tr>
-            <td colspan="5" class="text-center">A full-stack web developer with hands-on experience in both back-end and front-end
+            <td colspan="5" class="text-center">A full-stack web developer with hands-on experience in both back-end and
+                front-end
                 development,
                 including User
-                Acceptance Testing (UAT). A standalone web developer developed multiple webites from scratch.
+                Acceptance Testing (UAT). A standalone web developer created multiple websites from A to Z.
                 Enthusiastic in gaining more knowledge to make your ideas come true.</td>
         </tr>
         <tr>

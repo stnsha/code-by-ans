@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark-mode">
 
 <head>
     <meta charset="utf-8">
@@ -11,18 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <meta name="theme-color" content="white">
     <!-- Theme mode-->
-    <script>
+    {{-- <script>
         let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-          root.classList.add('dark-mode');
-    //   if (mode !== undefined && mode === 'dark') {
-    //     root.classList.add('dark-mode');
-    //   } else {
-    //     root.classList.remove('dark-mode');
-    //   }
-      
-      
-    </script>
+        root = document.getElementsByTagName('html')[0];
+      if (mode !== undefined && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script> --}}
     <!-- Page loading styles-->
     <style>
         .page-loading {
@@ -303,11 +300,11 @@
                             <path
                                 d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z" />
                         </svg></span>Code by ANS</a>
-                <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-                    <input class="form-check-input" type="checkbox" id="theme-mode">
+                {{-- <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto">
+                    <input class="form-check-input" type="checkbox" id="theme-mode" checked>
                     <label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
                     <label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
-                </div>
+                </div> --}}
             </div>
         </header>
         <!-- Page content-->
