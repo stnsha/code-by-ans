@@ -4,16 +4,24 @@
 <div class="responsive">
     <table class="table align-middle">
         <tr>
-            <td class="w-25"><img src="{{ asset('assets/img/avatar/ans01.jpg') }}" alt="code-by-ans"
+            {{-- <td class="w-25"><img src="{{ asset('assets/img/avatar/ans01.jpg') }}" alt="code-by-ans"
                     class="rounded rounded-circle mx-auto d-block" width="250px">
-            </td>
-            <td class="w-75 text-center" colspan="5">
-                <h3>Siti Anasuha Binti Rosli</h3>
-                <h5>Junior Developer at Far Digital Ventures</h5>
-                <div>
-                    <span class="mx-2 align-middle">+6011 5640 3061</span>
-                    <span>|</span>
-                    <span class="mx-2 align-middle">contact@codebyans.com</span>
+            </td> --}}
+            <td class="text-center" colspan="5">
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <img src="{{ asset('assets/img/avatar/ans01.jpg') }}" alt="code-by-ans"
+                            class="rounded rounded-circle mx-auto d-block" width="200px">
+                    </div>
+                    <div class="align-self-center ms-2">
+                        <h3>Siti Anasuha Binti Rosli</h3>
+                        <h6>Junior Developer at Far Digital Ventures</h6>
+                        <div>
+                            <span class="mx-2 align-middle">+6011 5640 3061</span>
+                            <span>|</span>
+                            <span class="mx-2 align-middle">contact@codebyans.com</span>
+                        </div>
+                    </div>
                 </div>
             </td>
         </tr>
@@ -21,7 +29,7 @@
             <th colspan="5" class="text-center">Overview</th>
         </tr>
         <tr>
-            <td colspan="5">A full-stack web developer with hands-on experience in both back-end and front-end
+            <td colspan="5" class="text-center">A full-stack web developer with hands-on experience in both back-end and front-end
                 development,
                 including User
                 Acceptance Testing (UAT). A standalone web developer developed multiple webites from scratch.
@@ -76,6 +84,7 @@
                 <span class="badge rounded-md bg-advanced m-1">PHP</span>
             </td>
             <td class="w-20">
+                <span class="badge rounded-md bg-beginner m-1">.NET</span>
                 <span class="badge rounded-md bg-intermediate m-1">Livewire</span>
                 <span class="badge rounded-md bg-advanced m-1">Laravel</span>
                 <span class="badge rounded-md bg-advanced m-1">TailwindCSS</span>
